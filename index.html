@@ -11,10 +11,10 @@
 <!-- NVDA - acessibilidade
 app WAVE mostra os erros de estruturação do site 
 -->
-<body class="dark-theme" aria-label="O site está utilizando o tema light" role="body"> <!-- foi colocado porque estava dando erro no css -->
+<body class="light-theme" aria-label="O site está utilizando o tema light" role="body"> <!-- foi colocado porque estava dando erro no css -->
     <header>
         <audio id="music" autoplay>
-            <!-- <source src="assets/musics/normal-world.mpeg"/> -->
+            <source src="assets/musics/normal-world.mpeg"/>
             <!-- <source src="assets/musics/normal-world.mp3"/> colocar outros formatos como opção -->
             Este navegador não aceita audio 
             <!--isso é para mostrar caso o navegador não posso reproduzir nenhum formato do áudio-->
@@ -125,7 +125,10 @@ app WAVE mostra os erros de estruturação do site
         <img src="assets/imagens/footer/logo.svg" alt="logotipo da DIO - Digital Inovation One">
     </footer>
     <script>
-        
+        function switchTheme() { //para inversão dos temas
+            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('light-theme');
+        }
     </script>
 </body>
 </html>
