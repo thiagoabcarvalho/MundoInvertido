@@ -108,7 +108,7 @@ app WAVE mostra os erros de estruturação do site
                     <input type="email" name="email" id="txtEmail">
                 
                     <label for="level">Level</label>
-                    <input type="text" name="level" id="txtLevel">
+                    <input type="number" name="level" id="txtLevel">
                 
                     <label for="character">Personagem</label>
                     <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
@@ -124,11 +124,7 @@ app WAVE mostra os erros de estruturação do site
         <p>Projeto construído para fins didáticos, com o objetivo de colocar em prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._</p>
         <img src="assets/imagens/footer/logo.svg" alt="logotipo da DIO - Digital Inovation One">
     </footer>
-    <script>
-        function switchTheme() { //para inversão dos temas
-            document.body.classList.toggle('dark-theme');
-            document.body.classList.toggle('light-theme');
-        }
-    </script>
+    <script type="module" src="/assets/js/main.js"></script> 
+    <!-- colocar sempre no final para melhor desempenho. impotante colocar o type="module" quando está integrando o firebase -->
 </body>
 </html>
