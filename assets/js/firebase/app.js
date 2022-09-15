@@ -6,17 +6,17 @@
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: "AIzaSyAUjzPGyyvzK1ydVEy0EAvmqQtEbu-qEG0",
-    authDomain: "mundoinvertido-th.firebaseapp.com",
-    projectId: "mundoinvertido-th",
-    storageBucket: "mundoinvertido-th.appspot.com",
-    messagingSenderId: "742433142042",
-    appId: "1:742433142042:web:6841ec819282e03fa468a3"
+    apiKey: "AIzaSyCHNKSyGegQe54UqS6siUr88OSTZeVW7Ww",
+    authDomain: "projeto-teste-8e429.firebaseapp.com",
+    projectId: "projeto-teste-8e429",
+    storageBucket: "projeto-teste-8e429.appspot.com",
+    messagingSenderId: "608139691081",
+    appId: "1:608139691081:web:0e810c6b2acd0f7b932b98"
   };
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-
   export default app
+
   
 

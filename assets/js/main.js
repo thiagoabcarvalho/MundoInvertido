@@ -1,7 +1,6 @@
+import { subscribeToHellfireClub } from "./firebase/hellfire-club.js"
 
-import { subscribeToStrangerThings } from "./firebase/stranger-things.js"
-
-
+(function main(){
 const txtName = document.getElementById('txtName')
 const txtEmail = document.getElementById('txtEmail')
 const txtLevel = document.getElementById('txtLevel')
@@ -17,9 +16,13 @@ btnSubscribe.addEventListener('click', async () => {
         character: txtCharacter.value
     }
     //salvar no banco de dados!
-    const subscriptionid = await subscribeToStrangerThings(subscription) 
-    console.log('inscrito com sucesso: ${subscriptionid}')
-} ) 
+    //subscribetoHellfireClub(subscription)
+
+    const subscriptionid = await subscribeToHellfireClub(subscription) 
+    alert('Inscrição ${id} adcionada com sucesso!')
+})
+
+})()
 
 
 //mudança do tema light/dark
