@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <title>Mundo invertido | Semana Frontend</title>
 </head>
 
 <!-- NVDA - acessibilidade
 app WAVE mostra os erros de estruturação do site 
 -->
-<body class="light-theme" aria-label="O site está utilizando o tema light" role="body"> <!-- foi colocado porque estava dando erro no css -->
+<body class="light-theme" aria-label="O site está utilizando o tema light" role="body"> 
     <header>
         <audio id="music" autoplay>
-            <!-- <source src="assets/musics/normal-world.mpeg"/> áudio desativado-->
-            <!-- <source src="assets/musics/normal-world.mp3"/> colocar outros formatos como opção -->
+            <source src="assets/musics/normal-world.mpeg"/> áudio desativado
+            <source src="assets/musics/normal-world.mp3"/> colocar outros formatos como opção
             Este navegador não aceita audio 
-            <!--isso é para mostrar caso o navegador não posso reproduzir nenhum formato do áudio-->
+            isso é para mostrar caso o navegador não posso reproduzir nenhum formato do áudio
         </audio>  
         <div class="header-content">
-            <img class="invert-element"   src="assets/imagens/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO">
+            <img class="invert-element"   src="./assets/imagens/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO">
                 <p class="invert-element" role="text">
                 <!-- a tag role é para reforçar a arvore da acessibilidade para o leitor de tela que o elemento é um parágrafo, 
                      pode ser alterado para button ai o leitor ira identificar como um botão -->
@@ -47,7 +47,7 @@ app WAVE mostra os erros de estruturação do site
                      que tem planos de trazer tudo isso ao nosso mundo.
                 </p>
             </div>
-            <img class="inert-element" src="assets/imagens/content/inverted-world.png" alt="Imagem ilustrativa do Mundo Invertido">
+            <img class="inert-element" src="./assets/imagens/content/inverted-world.png" alt="Imagem ilustrativa do Mundo Invertido">
         </section>
     
         <section id="section-stranger-thing-trailer" class="container">
@@ -76,13 +76,13 @@ app WAVE mostra os erros de estruturação do site
                 <h2>A segunda série mais assistida da Netflix</h2>
                 <ul class="gallery-container" role="gallery">
                     <li class="gallery-image invert-element">
-                        <img src="/assets/imagens/content/serie-image-01.png" alt="imagem do Vecna" />
+                        <img src="./assets/imagens/content/serie-image-01.png" alt="imagem do Vecna" />
                     </li>
                     <li class="gallery-image invert-element">
-                        <img src="/assets/imagens/content/serie-image-02.png" alt="magem ilustrativa dos amigos de Eleven">
+                        <img src="./assets/imagens/content/serie-image-02.png" alt="magem ilustrativa dos amigos de Eleven">
                     </li>
                     <li class="gallery-image invert-element">
-                        <img src="/assets/imagens/content/serie-image-03.png" alt="Imagem Eleven assustada">
+                        <img src="./assets/imagens/content/serie-image-03.png" alt="Imagem Eleven assustada">
                     </li>
                 </ul>
             </div>
@@ -124,7 +124,13 @@ app WAVE mostra os erros de estruturação do site
         <p>Projeto construído para fins didáticos, com o objetivo de colocar em prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._</p>
         <img src="assets/imagens/footer/logo.svg" alt="logotipo da DIO - Digital Inovation One">
     </footer>
-    <script type="module" src="/assets/js/main.js"></script> 
+    <script type="module" src="/MundoInvertido/assets/js/main.js"></script> 
+    <!-- <script>
+        function switchTheme() {
+            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('light-theme');
+        }
+    </script> -->
     <!-- colocar sempre no final para melhor desempenho. impotante colocar o type="module" quando está integrando o firebase -->
 </body>
 </html>
