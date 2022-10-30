@@ -1,16 +1,16 @@
 Mundo invertido
 
-Projeto desenvolvido, durante a semana Front-End da DIO, colocando em prática os conhecimentos em HTML, CSS e JavaScript.
+Projeto desenvolvido, juntamente com a DIO, colocando em prática os conhecimentos em HTML, CSS e JavaScript.
 
-Interface responsiva de uma página inspirada na série "Stranger Things", com theme switcher (light e dark),
-além de integrar um formulário de inscrição com um banco de dados Firebase.
+Interface responsiva de uma página inspirada na série "Stranger Things", com theme switcher (light e dark).
+
 
 
 # Tecnologias
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript (Vanilla)
 
 # Assuntos abordados
 
@@ -29,6 +29,4 @@ além de integrar um formulário de inscrição com um banco de dados Firebase.
   - Animações
 
 - JavaScript
-  - Manipulação do DOM
-  - utilização do Firestore(ainda não implantado)
-  - integração com o Firebase(ainda não implantado)
+  - Manipulação do DOM (theme switcher)
