@@ -8,30 +8,25 @@
     <title>Mundo invertido | Semana Frontend</title>
 </head>
 
-<!-- NVDA - acessibilidade
-app WAVE mostra os erros de estruturação do site 
--->
 <body class="light-theme" aria-label="O site está utilizando o tema light" role="body"> 
     <header>
         <audio id="music" autoplay>
-            <source src="assets/musics/normal-world.mpeg"/> áudio desativado
-            <source src="assets/musics/normal-world.mp3"/> colocar outros formatos como opção
+            <source src="./assets/musics/normal-world.mpeg"/> áudio desativado
+            <source src="./assets/musics/normal-world.mp3"/> colocar outros formatos como opção
             Este navegador não aceita audio 
             isso é para mostrar caso o navegador não posso reproduzir nenhum formato do áudio
         </audio>  
         <div class="header-content">
             <img class="invert-element"   src="./assets/imagens/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO">
-                <p class="invert-element" role="text">
-                <!-- a tag role é para reforçar a arvore da acessibilidade para o leitor de tela que o elemento é um parágrafo, 
-                     pode ser alterado para button ai o leitor ira identificar como um botão -->
+                <p class="invert-element" role="text">               
                 Uma jornada para quem não tem medo do desconhecido. O caminho para o 
                 Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a
                 recompensa é grande: salvar Hawkings e o mundo todo das garras de
                 Vecna. Você está preparado? Então clique no botão abaixo para entrar
                 no Mundo Invertido! 
                 </p>
-            </img>
-            <button id="switch-theme-button" onclick="switchTheme()">Inverter Mundos</button> <!--botão inicial-->
+            </img>            
+            <button type="checkbox" id="theme-button">Inverter Mundos</button>
         </div>
         <div id="top-characters" class="world-characters"></div>
     </header>
@@ -63,7 +58,7 @@ app WAVE mostra os erros de estruturação do site
             </div>
             <div class="section-texts">
                 <h2>Stranger Things Vol.4</h2>
-                <p role="text"> <!-- role é uma TAG de acessibilidade -->
+                <p role="text">
                     Mais experientes, os heróis de Stranger Things também precisam 
                     enfrentar desafios maiores do que nunca e fazer decisões que vão 
                     mudar suas vidas para sempre. Confira ao lado o trailer da quarta 
@@ -122,15 +117,8 @@ app WAVE mostra os erros de estruturação do site
     </main>
     <footer>
         <p>Projeto construído para fins didáticos, com o objetivo de colocar em prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._</p>
-        <img src="assets/imagens/footer/logo.svg" alt="logotipo da DIO - Digital Inovation One">
+        <img src="./assets/imagens/footer/logo.svg" alt="logotipo da DIO - Digital Inovation One">
     </footer>
-    <script type="module" src="/MundoInvertido/assets/js/main.js"></script> 
-    <!-- <script>
-        function switchTheme() {
-            document.body.classList.toggle('dark-theme');
-            document.body.classList.toggle('light-theme');
-        }
-    </script> -->
-    <!-- colocar sempre no final para melhor desempenho. impotante colocar o type="module" quando está integrando o firebase -->
+    <script type="module" src="./assets/js/main.js"></script>     
 </body>
 </html>

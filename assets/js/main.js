@@ -1,10 +1,9 @@
-//mudança do tema light/dark
+const btn_darkmode = document.getElementById( 'theme-button' );
 
-//const themeDarkLignt = document.querySelector("#switch-theme-button")
-const addTheme = document.querySelector("#switch-theme-button")
- function switchTheme() {
-    document.body.classList.toggle('dark-theme');
-    document.body.classList.toggle('light-theme');
-}
-
+btn_darkmode.addEventListener( 'click', event => {
+    event.preventDefault();
+    const body_darkmode = document.body.classList;
+    body_darkmode.toggle( 'light-theme' );
+    body_darkmode.toggle( 'dark-theme' );
+} );
 
