@@ -17,7 +17,7 @@ Projeto desenvolvido, juntamente com a escola DIO, colocando em prática os conh
 
 <br>
 
-**_[Deploy do projeto](https://rocketpay-teal.vercel.app)_**
+**_[Deploy do projeto](https://mundo-invertido-stranger-things.vercel.app)_**
 
 ## 🚀 Tecnologias
 
@@ -39,5 +39,5 @@ O layout apresentado foi desenvolvido pela escola DIO
 
 <p align="center">
 
-  <a href="https://rocketpay-teal.vercel.app"><img src="./assets/imagens/scrennshot.png"></a>  
+  <a href="https://mundo-invertido-stranger-things.vercel.app"><img src="./assets/imagens/scrennshot.png"></a>  
 </p>
